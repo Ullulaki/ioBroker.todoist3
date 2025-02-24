@@ -1,38 +1,47 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        // do not compile anything, this file is just to configure type checking
-        "noEmit": true,
-
-        // check JS files
         "allowJs": true,
-        "checkJs": true,
-
-        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "declaration": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "module": "ESNext",
         "moduleResolution": "node",
-        // this is necessary for the automatic typing of the adapter config
+        "noEmitOnError": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "./build",
+        "removeComments": false,
         "resolveJsonModule": true,
-
-        // Set this to false if you want to disable the very strict rules (not recommended)
+        "rootDir": "./src",
+        "skipLibCheck": false,
+        "sourceMap": true,
         "strict": true,
-        // Or enable some of those features for more fine-grained control
-        // "strictNullChecks": true,
-        // "strictPropertyInitialization": true,
-        // "strictBindCallApply": true,
-        "noImplicitAny": false,
-        // "noUnusedLocals": true,
-        // "noUnusedParameters": true,
-
-        // Consider targetting es2017 or higher if you require the new NodeJS 8+ features
-        "target": "es2015",
-
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "target": "ES2020",
+        "tsBuildInfoFile": "./build/.tsbuildinfo",
+        "types": [
+            "node"
+        ]
     },
     "include": [
-        "**/*.js",
-        "**/*.d.ts"
+        "src/**/*.ts",
+        "src/**/*.js"
     ],
     "exclude": [
+        "build/**",
         "node_modules/**",
-        "admin/**"
+        "admin/**",
+        "test/**"
     ]
 }
