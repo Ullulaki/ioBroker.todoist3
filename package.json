@@ -1,6 +1,6 @@
 {
     "name": "iobroker.todoist3",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Todoist Adapter with REST API v2",
     "author": {
         "name": "Ullulaki",
@@ -10,11 +10,7 @@
     "license": "MIT",
     "keywords": [
         "ioBroker",
-        "todoist",
-        "Smart Home",
-        "home automation",
-        "tasks",
-        "productivity"
+        "todoist"
     ],
     "repository": {
         "type": "git",
